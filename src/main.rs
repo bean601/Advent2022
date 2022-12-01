@@ -17,7 +17,7 @@ fn main() {
 
     let args: Vec<String> = env::args().collect();
     
-    if (args.len() < 2)
+    if args.len() < 2
     {
         panic!("A day to run is a required parameter");
     }
@@ -46,7 +46,7 @@ fn main() {
     } 
 }
 
-pub fn get_input_file(path: &str, day: u8) -> String {
+fn get_input_file(path: &str, day: u8) -> String {
     let dir = env::current_dir().unwrap();
 
     let filepath = dir
