@@ -42,6 +42,7 @@ fn main() {
 
     match day {
         1 => solve!(day1, &input),
+        2 => solve!(day2, &input),
         _ => println!("No solution found for day {}", day)
     } 
 }
